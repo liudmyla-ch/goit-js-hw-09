@@ -14,7 +14,7 @@ This project was created with Parcel. For familiarization and setting additional
 6. Install the project's dependencies in the terminal with the `npm install` command.
 7. Start development mode by running the `npm start` command.
 8. Go to [http://localhost:1234](http://localhost:1234) in your browser.
-   This page will automatically reload after saving changes to the project files
+   This page will automatically reload after saving changes to the project files.
 
 ## Files and folders
 

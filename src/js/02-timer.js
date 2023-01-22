@@ -48,10 +48,10 @@ startBtn.addEventListener('click', () => {
     let endDate = new Date(chooseDate.value);
     let deltaDate = convertMs(endDate - currentDate);
 
-    days.textContent = deltaDate.days.toString().padStart(2, '0');
-    hours.textContent = deltaDate.hours.toString().padStart(2, '0');
-    minutes.textContent = deltaDate.minutes.toString().padStart(2, '0');
-    seconds.textContent = deltaDate.seconds.toString().padStart(2, '0');
+    days.textContent = addLeadingZero(deltaDate.days);
+    hours.textContent = addLeadingZero(deltaDate.hours);
+    minutes.textContent = addLeadingZero(deltaDate.minutes);
+    seconds.textContent = addLeadingZero(deltaDate.seconds);
 
     let distance = (endDate.getTime() - currentDate.getTime()) * 0.001;
 
@@ -62,15 +62,14 @@ startBtn.addEventListener('click', () => {
   }, 1000);
 });
 
-
+function addLeadingZero(value){
+  return value.toString().padStart(2, '0');
+};
 
 function timerStyle() {
   for (i = 0; i < timerValue.length; i++) {
     timerValue[i].style.fontSize = '48px';
     timerLabel[i].style.fontSize = '16px';
-  };
-
-  for (i = 0; i < timerField.length; i++) {
     timerField[i].style.display = 'flex';
     timerField[i].style.flexDirection = 'column';
     timerField[i].style.padding = '10px';

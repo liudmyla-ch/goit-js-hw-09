@@ -13,6 +13,7 @@ const timerLabel = document.querySelectorAll('.label');
 const timerField = document.querySelectorAll('.field');
 const chooseDate = document.querySelector('#datetime-picker');
 const startBtn = document.querySelector('button[data-start]');
+let choosenDate;
 
 const options = {
   enableTime: true,

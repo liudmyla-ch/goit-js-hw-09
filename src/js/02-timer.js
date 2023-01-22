@@ -13,7 +13,7 @@ const timerLabel = document.querySelectorAll('.label');
 const timerField = document.querySelectorAll('.field');
 const chooseDate = document.querySelector('#datetime-picker');
 const startBtn = document.querySelector('button[data-start]');
-let choosenDate;
+
 
 const options = {
   enableTime: true,
@@ -21,7 +21,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    choosenDate = selectedDates[0];
+   
     console.log(selectedDates[0]);
   },
 };

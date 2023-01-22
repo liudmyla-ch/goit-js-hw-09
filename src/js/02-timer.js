@@ -67,7 +67,7 @@ function addLeadingZero(value){
 };
 
 function timerStyle() {
-  for (i = 0; i < timerValue.length; i++) {
+  for (let i = 0; i < timerValue.length; i++) {
     timerValue[i].style.fontSize = '48px';
     timerLabel[i].style.fontSize = '16px';
     timerField[i].style.display = 'flex';
